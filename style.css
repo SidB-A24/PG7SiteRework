@@ -251,6 +251,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .hero {
+        padding: 100px;
+    }
+
     .hero__heading {
         font-size: 60px;
     }
@@ -385,4 +390,15 @@
 
 .info__item a {
     color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    .main__title {
+        font-size: 0.8rem;
+    }
+
+    .info__item {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
 }
