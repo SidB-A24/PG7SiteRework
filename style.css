@@ -395,10 +395,45 @@
 @media screen and (max-width: 768px) {
     .main__title {
         font-size: 0.8rem;
+        margin-top: 1rem;
     }
 
     .info__item {
-        font-size: 0.5rem;
         font-weight: 300;
+        font-size: 0.5rem;
+    }
+
+    .info_boxes {
+        flex-direction: column;
+    }
+
+    .main__info {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+    }
+
+    .main__info li {
+        position: relative;
+        padding-top: 0.5rem;
+        text-indent: 0;
+        line-height: 1rem;
+        font-size: 100%;
+    }
+
+    .main__info li::before {
+        content: "🍕";
+        position: absolute;
+        left: 1.75rem;
+        top: 2;
+        line-height: 2;
+        font-size: 1rem;
+    }
+
+    .main__content {
+        height: 200px;
+        width: 87.5%;
+
     }
 }
