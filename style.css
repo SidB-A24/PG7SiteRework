@@ -37,6 +37,7 @@
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,6 +76,7 @@
     align-items: center;
     padding: 0 1rem;
     width: 100%;
+    color: #6e410a;
 }
 
 .button {
@@ -93,6 +95,17 @@
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     color: #fff;
     transition: all 0.3s ease;
+}
+
+
+.navbar__btn:hover {
+    color: #eeab53;
+}
+
+
+.navbar__btn a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .navbar__links:hover {
@@ -201,7 +214,7 @@
 .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 270px 0;
+    padding: 270px 0px;
 }
 
 .hero__container {
@@ -217,16 +230,18 @@
 }
 
 .hero__heading {
-    font-size: 75px;
-    margin-bottom: 24px;
+    font-size: 60px;
+    margin-bottom: 25px;
     color: #fff;
 }
 
 .hero__heading span {
+    font-size: 110%;
     background: #fd1d1d;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -240,6 +255,7 @@
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -278,6 +294,7 @@
     cursor: pointer;
     position: relative;
     outline: none;
+    text-decoration: none;
 }
 
 
@@ -334,7 +351,9 @@
 
 }
 
+
 .main__content {
+
     background: #bdc3c7;
     background: -webkit-linear-gradient(to right, #2c3e50, #1d1e1e);
     background: linear-gradient(to right, #2c3e50, #1d1e1e);
@@ -342,7 +361,12 @@
     height: 300px;
     width: 30%;
     border-radius: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 150, 136, 0.5);
+    transition: box-shadow 0.3s ease;
+}
 
+.main__content:hover {
+    box-shadow: 0px 0px 15px rgba(0, 150, 136, 1);
 }
 
 
@@ -350,14 +374,19 @@
     font-size: 1.5rem;
     margin-left: 2rem;
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to bottom, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: capitalize;
     margin-bottom: 4px;
+}
+
+.main__title h1 {
+    font-family: 'Brush Script MT', cursive;
 }
 
 .main__info {
@@ -368,6 +397,7 @@
 }
 
 .main__info li {
+    font-family: 'Brush Script MT', cursive;
     position: relative;
     padding-left: 3.75rem;
     text-indent: 0;
@@ -385,7 +415,7 @@
 .info__item {
     font-weight: 600;
     font-size: 1.4rem;
-    color: rgb(255, 109, 109);
+    color: rgb(25, 212, 131);
 }
 
 .info__item a {
@@ -407,12 +437,6 @@
         flex-direction: column;
     }
 
-    .main__info {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-
-    }
 
     .main__info li {
         position: relative;
@@ -435,5 +459,38 @@
         height: 200px;
         width: 87.5%;
 
+    }
+}
+
+.header__container {
+    overflow: hidden;
+    background-color: yellow;
+    white-space: nowrap;
+}
+
+.header__bar {
+    display: inline-flex;
+    animation: scroll 25s linear infinite;
+}
+
+.tape__text {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
