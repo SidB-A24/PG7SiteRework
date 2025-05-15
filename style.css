@@ -11,7 +11,7 @@
     background-image: -webkit-linear-gradient(to right, #10257f, #d71e1e);
     background-image: linear-gradient(to right, #10257f, #d71e1e);
     background-size: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,8 @@
 .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 270px 0px;
+    background-image: url("assets/mountainbg.jpg");
+    padding: 13.5% 0px;
 }
 
 .hero__container {
@@ -347,13 +348,12 @@
 
 .info_boxes {
     display: flex;
+    justify-content: space-around;
     gap: 2.5rem;
-
 }
 
 
 .main__content {
-
     background: #bdc3c7;
     background: -webkit-linear-gradient(to right, #2c3e50, #1d1e1e);
     background: linear-gradient(to right, #2c3e50, #1d1e1e);
@@ -361,12 +361,12 @@
     height: 300px;
     width: 30%;
     border-radius: 30px;
-    box-shadow: 0px 0px 5px rgba(0, 150, 136, 0.5);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
 }
 
 .main__content:hover {
-    box-shadow: 0px 0px 15px rgba(0, 150, 136, 1);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 
@@ -389,7 +389,10 @@
     font-family: 'Brush Script MT', cursive;
 }
 
+
 .main__info {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -414,8 +417,10 @@
 
 .info__item {
     font-weight: 600;
-    font-size: 1.4rem;
-    color: rgb(25, 212, 131);
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: rgb(75, 165, 197);
 }
 
 .info__item a {
@@ -464,7 +469,10 @@
 
 .header__container {
     overflow: hidden;
-    background-color: yellow;
+    background-color: rgb(255, 64, 0);
+    background-image: linear-gradient(to left, #10257f, #d71e1e);
+    padding: 3px 0;
+    border-bottom: 5px groove rgb(255, 128, 0);
     white-space: nowrap;
 }
 
@@ -479,7 +487,7 @@
     gap: 2rem;
     padding-right: 2rem;
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
 }
 
@@ -493,4 +501,13 @@
     100% {
         transform: translateX(0%);
     }
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    border-top: 50px solid;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
