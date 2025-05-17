@@ -334,52 +334,40 @@
 .header__container {
     overflow: hidden;
     background-color: rgb(255, 64, 0);
-    background-image: linear-gradient(to left, #10257f, #d71e1e);
+    background-image: linear-gradient(to left,  #e93e82, #e0a93a);
     padding: 3px 0;
-    border-bottom: 5px groove rgb(255, 128, 0);
+    
     white-space: nowrap;
+    height: 10px;
 }
 
-.header__bar {
-    display: inline-flex;
-    animation: scroll 25s linear infinite;
-}
-
-.tape__text {
-    display: inline-flex;
-    align-items: center;
-    gap: 2rem;
-    padding-right: 2rem;
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    white-space: nowrap;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
+#about-me-title {
+    font-size: 10rem;
+    margin-left:18%;
+    top: 900px;
+    position: fixed;
+    background: linear-gradient(to top, #ffffff60 25%, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    z-index: -1;
 }
 
 .about__container {
-    height: 900px;
+    height: 1000px;
     width: 100%;
-    background: linear-gradient(to bottom, #2b2b2b, #0d0d0d);
+    background: linear-gradient(to bottom, black, #000000dc, #000000 40%);
     position: relative;
 }
 
 .about__card {
     width: 550px;
-    height: 750px;
+    height: 700px;
     position: absolute;
     left: 8%;
-    top: 15%;
+    top: 25%;
     border-radius: 15px;
-    background: linear-gradient(to top, #e93e82, #e0a93a);
+    background: linear-gradient(to top, black 12%,  #e93e82, #e0a93a);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -387,6 +375,8 @@
 }
 
 #pfp {
+    position: relative;
+    top: -90px;
     height: 225px;
     width: 200px;
     margin-top: 15px;
@@ -395,9 +385,11 @@
 }
 
 .about__info {
+    position: relative;
+    top: -50px;
     height: 450px;
     width: 400px;
-    background: linear-gradient(to top, #3a3a3a, #000000);
+    background: linear-gradient(to bottom, #3a3a3a, #000000);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -494,17 +486,16 @@
 
 .about__text__box {
     position: absolute;
-    width: 850px;
+    width: auto;
     height: 750px;
-    border: 5px solid rgb(88, 57, 57);
-    left: 50%;
-    top: 15%;
+
+    left: 55%;
+    top: 48%;
     border-radius: 5%;
     padding: 2rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
 }
 
@@ -522,4 +513,33 @@
     width: 100%;
     line-height: 1.5;
     text-align: left;
+}
+
+#projtitle-what {
+    font-size: 10rem;
+    color: white;
+}
+
+#projtitle-ido {
+    font-size: 10rem;
+    color: white;
+
+    background: linear-gradient(to top, black 20%,  #e93e82, #e0a93a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} 
+
+#projdivider {
+    border: rgb(255, 255, 255) 1px solid ;
+    
+}
+
+.projects__container {
+    top: 1000px;
+    height: 1000px;
+    width: 100%;
+    z-index: 1;
+    background: black;
+    position: relative;
 }
