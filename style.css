@@ -8,8 +8,8 @@
 
 .navbar {
     background: #221111;
-    background-image: -webkit-linear-gradient(to right, #10257f, #d71e1e);
-    background-image: linear-gradient(to right, #10257f, #d71e1e);
+    background-image: -webkit-linear-gradient(to right, #e93e82, #e0a93a);
+    background-image: linear-gradient(to right,#e93e82, #e0a93a);
     background-size: 100%;
     height: 100px;
     display: flex;
@@ -34,8 +34,8 @@
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #000000;
+    background-image: linear-gradient(to top, #e0a93a,#ffe2ca);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -47,6 +47,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: heavy;
 }
 
 .navbar__menu {
@@ -91,17 +92,17 @@
     outline: none;
     border-radius: 4px;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to left,#e93e82,  rgb(231, 132, 132));
+    background: linear-gradient(to left, #e93e82,  rgb(231, 132, 132));
     color: #fff;
     transition: all 0.3s ease;
 }
 
 
 .navbar__btn:hover {
-    color: #22ff00;
+    color: #e93e82;
     display: block;
-    filter: drop-shadow(0 0 10px #fffdef);
+    filter: drop-shadow(0 0 8px  rgb(231, 132, 132));
 }
 
 .navbar__btn a {
@@ -240,8 +241,8 @@
 .hero__heading span {
     font-size: 110%;
     background: #fd1d1d;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to right, #e93e82, #e0a93a);
+    background: linear-gradient(to right, #e93e82, #e0a93a);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -254,8 +255,8 @@
     font-size: 25px;
     margin-bottom: 50px;
     background: #fd1d1d;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to right, #e93e82, #e0a93a);
+    background: linear-gradient(to right, #e93e82, #e0a93a);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -284,11 +285,11 @@
 }
 
 .hero__btn {
-    color: #ead699;
+    color: #f0e5c5;
     font-size: 1.5rem;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to right, #e93e82, #e0a93a);
+    background: linear-gradient(to right, #e93e82, #e0a93a);
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -314,15 +315,15 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    background: #e93e82;
+    background: -webkit-linear-gradient(to left, #e93e82, #e0a93a);
+    background: linear-gradient(to left, #e93e82, #e0a93a);
     transition: all 0.25s;
     border-radius: 4px;
 }
 
 .hero__btn:hover {
-    color: #eeab53;
+    color: #303030;
 }
 
 .hero__btn:hover::after {
@@ -377,9 +378,8 @@
     position: absolute;
     left: 8%;
     top: 15%;
-    background-color: #2e2d2d;
-    border-radius: 10%;
-    border: 5px solid black;
+    border-radius: 15px;
+    background: linear-gradient(to top, #e93e82, #e0a93a);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,14 +390,15 @@
     height: 225px;
     width: 200px;
     margin-top: 15px;
-    border-radius: 5%;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .about__info {
     height: 450px;
     width: 400px;
-    background-color: #1c1b1b;
-    border-radius: 5%;
+    background: linear-gradient(to top, #3a3a3a, #000000);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,7 +416,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 1;
     font-size: 1.2rem;
-    color: rgb(238, 106, 5);
+    color: #e0a93a;
     margin-top: 15px;
 }
 
@@ -439,16 +440,15 @@
     color: white;
     font-weight: bold;
     font-size: 14px;
-    background: linear-gradient(to right, #008578 75%, #02504a 25%);
+    background: linear-gradient(to right, #e0a93a , black 75%);
     transition: transform 0.2s ease;
     border: 1px solid black;
 }
 
 .rick__roll {
-    padding: 10px 10px;
-    background: #ff4000;
+    padding: 5px 5px;
+    background: #e0a93a;
     transition: transform 0.2s ease;
-    border: 1px solid black;
     border-radius: 8px;
     text-align: center;
 
@@ -458,9 +458,11 @@
     height: 40px;
     width: 400px;
     text-decoration: none;
-    color: #08149d;
+    color: #000000;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 1px;
+    text-align: left;
 }
 
 #insta__btn:hover,
@@ -479,8 +481,8 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: 25px;
-    margin-bottom: -20px;
-    color: rgb(204, 18, 18);
+    margin-bottom:-40px;
+    color: #e0a93a;
 }
 
 .about__info p {
