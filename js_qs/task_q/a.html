@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css" />
+</head>
+
+<body>
+    <div outer__container>
+        <div id="title__box">
+            <h1>Todo List</h1>
+        </div>
+        <div id="center__info">
+            <div id="item__box">
+                <input id="task__input" type="text" placeholder="Add your task" />
+                <div>
+                    <button onClick="addTask()">Submit</button>
+                </div>
+            </div>
+            <ul id="task__list">
+                <li>
+                    <span>Walk the dog</span>
+                    <button class="del-btn" onClick="delTask()">
+                        ❌
+                    </button>
+                </li>
+                <li>
+                    <span>Water the plants</span>
+                    <button class="del-btn" onClick="delTask()">
+                        ❌
+                    </button>
+                </li>
+                <li>
+                    <span>Wash the dishes</span>
+                    <button class="del-btn" onClick="delTask()">
+                        ❌
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="a.js"></script>
+</body>
+
+</html>

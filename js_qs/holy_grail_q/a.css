@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 12px;
+}
+
+header {
+    background-color: tomato;
+    height: 5rem;
+}
+
+.mid__screen {
+    display: flex;
+    justify-content: center;
+    height: 39.5rem;
+}
+
+.mid__screen main {
+    background-color: moccasin;
+    width: 60%;
+}
+
+.mid__screen nav {
+    background-color: coral;
+    width: 20%;
+}
+
+.mid__screen aside {
+    background-color: sandybrown;
+    width: 20%;
+}
+
+footer {
+    background-color: slategray;
+    height: 4rem;
+}

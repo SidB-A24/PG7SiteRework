@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css" />
+</head>
+
+<body>
+    <div>
+        <div id="list__container">
+            <ul id="lst1">
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    HTML
+                </li>
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    JavaScript
+                </li>
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    CSS
+                </li>
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    TypeScript
+                </li>
+            </ul>
+            <div id="divider">
+                <button onClick="moveAllLeft()">&lt;&lt;</button>
+                <button class="move__btn" onClick="moveLeft()">
+                    &lt;
+                </button>
+                <button class="move__btn" onClick="moveRight()">
+                    &gt;
+                </button>
+                <button onClick="moveAllRight()">&gt;&gt;</button>
+            </div>
+            <ul id="lst2">
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    React
+                </li>
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    Angular
+                </li>
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    Vue
+                </li>
+                <li>
+                    <input class="selectedItem" type="checkbox" />
+                    velte
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="a.js"></script>
+</body>
+
+</html>
